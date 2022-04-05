@@ -28,9 +28,14 @@ namespace NewFitnessApp.Model
         }
 
         public void CalculationDailyNormCalories(double Weight, double Height, double TypePhysicalActivity, DateTime BirthDay, double Gender)
-        {
-
-
+        {    if(Gender==1)//для мужчин 
+            {
+                this.DailyCalorieIntake = (66 + (13.7 * Weight) + (5 * Height) - (6.8 * DateTime.Now.Year-BirthDay.Year)) * TypePhysicalActivity;
+            }
+            else
+            {
+                this.DailyCalorieIntake = (655.1 + (9.6 * Weight) + (1.8 * Height) - (4.7 * DateTime.Now.Year - BirthDay.Year)) * TypePhysicalActivity;
+            }
         }
     }
 
