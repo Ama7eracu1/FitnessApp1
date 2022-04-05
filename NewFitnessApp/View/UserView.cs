@@ -1,9 +1,13 @@
 ﻿using System;
 
 
-namespace NewFitnessApp.View
+namespace NewFitnessApp
 {
-    internal class UserView
+  public class UserView
     {
+        public User user { get; set; }
+        
+
+
     }
 }

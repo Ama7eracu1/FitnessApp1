@@ -1,9 +1,9 @@
 ﻿using System;
 
 
-namespace NewFitnessApp.Controller
+namespace NewFitnessApp
 {
-    internal class UserController
+   public class UserController
     {
     }
 }

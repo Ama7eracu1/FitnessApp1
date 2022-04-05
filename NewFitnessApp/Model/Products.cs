@@ -2,7 +2,7 @@
 /// <summary>
 /// класс реализует добавление нового продукта.
 /// </summary>
-namespace NewFitnessApp.Model
+namespace NewFitnessApp
 {
     public class Products
     {
