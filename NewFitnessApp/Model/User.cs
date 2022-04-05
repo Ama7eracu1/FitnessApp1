@@ -16,7 +16,7 @@ namespace NewFitnessApp
         public double Height { get; set; }
         public double TypePhysicalActivity { get; }
         public bool Gender { get; }//установка пола пользователя.1-мужчина.2-девушка
-        public User(string Name, DateTime BirthDay, double Weight, double Height, double TypePhysicalActivity, bool Gender, string Password)
+        public User(string name, DateTime BirthDay, double Weight, double Height, double TypePhysicalActivity, bool Gender, string Password)
         { //надо добавит обработку данных на ошибки через throw
             this.Name = Name;
             this.BirthDay = BirthDay;
