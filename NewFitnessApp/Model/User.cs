@@ -7,7 +7,6 @@ namespace NewFitnessApp.Model
 
     public class User
     {
-
         private string Password { get; set; }
         protected double DailyCalorieIntake;
         public string Name { get; }
