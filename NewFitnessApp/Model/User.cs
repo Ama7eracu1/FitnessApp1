@@ -32,7 +32,7 @@ namespace NewFitnessApp.Model
             {
                 this.DailyCalorieIntake = (66 + (13.7 * Weight) + (5 * Height) - (6.8 * DateTime.Now.Year-BirthDay.Year)) * TypePhysicalActivity;
             }
-            else
+            else//для девушек 
             {
                 this.DailyCalorieIntake = (655.1 + (9.6 * Weight) + (1.8 * Height) - (4.7 * DateTime.Now.Year - BirthDay.Year)) * TypePhysicalActivity;
             }
