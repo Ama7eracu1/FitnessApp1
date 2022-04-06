@@ -40,7 +40,7 @@ namespace NewFitnessApp
                 this.DailyCalorieIntake = (655.1 + (9.6 * Weight) + (1.8 * Height) - (4.7 * DateTime.Now.Year - BirthDay.Year)) * TypePhysicalActivity;
             }
         }
-        public void IntakeFood(Products product)
+        public void IntakeFood(Products product)//реализация добавления приёма пищи.
         {
             double oneGram = product.CalloriesIn100Grams / 100;
             this.DailyCalorieIntake = this.DailyCalorieIntake - oneGram * product.Weight;
