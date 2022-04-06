@@ -10,7 +10,7 @@ namespace NewFitnessApp
 
         private string NickName { get; set; }
         private string Password { get; set; }
-        protected double DailyCalorieIntake;
+        private double DailyCalorieIntake;
         public string Name { get; }
         public DateTime BirthDay { get; }
         public double Weight { get; set; }
@@ -43,8 +43,20 @@ namespace NewFitnessApp
         public void IntakeFood(Products product)//реализация добавления приёма пищи.
         {
             double oneGram = product.CalloriesIn100Grams / 100;
-            this.DailyCalorieIntake = this.DailyCalorieIntake - oneGram * product.Weight;
+            DailyCalorieIntake = DailyCalorieIntake - oneGram * product.Weight;
         }
+        public bool СhangePassword()
+        {
+            Console.Write("Для смены пароля введите старый: ");
+            if (Console.ReadLine() == Password)
+            {
+                Console.WriteLine("Введите новый пароль: ");
+                Password = Console.ReadLine();
+                return true;
+            }
+            else { Console.WriteLine("Вы ввели неправильный пароль.Повторите попытку снова"); return false; }
+        }
+
 
 
     }
