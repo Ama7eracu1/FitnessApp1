@@ -5,15 +5,17 @@
 /// </summary>
 namespace NewFitnessApp
 {
-   public class UserController
+    public class UserController
     {
-        public User user {get;}
-        public UserController(string userName,DateTime birthDay,double weight,double height,double typePhysicalActivity,bool gender,string password)
+        public User user { get; }
+        public UserController(string nickName, string password, string userName, DateTime birthDay, double weight, double height, double typePhysicalActivity, bool gender)
         {
-            var user = new User(userName, birthDay, weight, height, typePhysicalActivity, gender, password);
+            //сделать проверки данных
+
+            var user = new User(nickName, password, userName, birthDay, weight, height, typePhysicalActivity, gender);
         }
-         //добавить запись в файл на выбор 
-         //добавить добавление в бд на выбор 
+        //добавить запись в файл на выбор 
+        //добавить добавление в бд на выбор 
 
 
     }
